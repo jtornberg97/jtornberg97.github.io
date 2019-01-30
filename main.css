@@ -1,0 +1,60 @@
+header {
+  border: black;
+  border-style: solid;
+  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: black;
+  margin-top: -1em;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-bottom: 3em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: right;
+}
+
+header li a {
+  display: block;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+header li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+body {
+  background-color: black;
+  font-family: "Exo", sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+body h1 {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+}
