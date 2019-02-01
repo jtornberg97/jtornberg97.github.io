@@ -90,5 +90,19 @@ body {
 
 .who a:hover {
   text-decoration: underline;
-  color: gray;
+  color: blue;
+}
+
+.who {
+  border-style: solid;
+  padding-right: 2em;
+  padding-bottom: 20em;
+  padding-left: 2em;
+}
+
+.focus {
+  border-style: solid;
+  padding-right: 2em;
+  padding-bottom: 20em;
+  padding-left: 2em;
 }
