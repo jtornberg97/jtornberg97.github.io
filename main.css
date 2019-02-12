@@ -1,6 +1,16 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Exo", sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  color: black;
+  margin: 0em;
+}
+
+/* Setting Up Flexbox in Header */
+
 .header {
   padding-top: .5em;
-  padding-bottom: .75em;
+  padding-bottom: .5em;
   border: 0.0625em solid black;
   color: whitesmoke;
   background: linear-gradient(97deg,
@@ -13,34 +23,29 @@
   box-shadow: 0em 0em 0.875em 0em rgba(0, 0, 0, 0.75);
 }
 
+.header a {
+  color: whitesmoke;
+}
+
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  min-height: 100vh;
-}
-
-ul {
+.header ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-
-h2,
+.header h2,
 h3,
 a {
-  color: whitesmoke;
+  color: black;
 }
 
-a {
+.header a {
   text-decoration: none;
 }
-
 
 
 .logo {
@@ -103,9 +108,52 @@ a {
 
 }
 
-body {
-  background-color: whitesmoke;
-  font-family: "Exo", sans-serif, "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
-  color: black;
+/* Grid for Main Content */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1.75fr;
+  grid-gap: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  grid-auto-rows: minmax(10em, auto);
+}
+
+.wrapper>section {
+  padding: 1em;
+}
+
+
+/* Grid for Headshot and Social Media */
+.headshot {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(16em, auto);
+}
+
+.headshot img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5em;
+  padding-left: 1em;
+}
+
+.fa-linkedin-in {
+  color: #0976b4;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-instagram {
+  color: #f46f30;
 }
