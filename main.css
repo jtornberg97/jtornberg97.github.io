@@ -62,6 +62,8 @@ body {
 
 .main li {
   font-size: 1.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .main h3 {
@@ -99,27 +101,27 @@ body {
 }
 
 .social a {
-  margin-right: 0.5em;
-}
-
-.social h2 {
-  margin-top: 5em;
 }
 
 .fa-linkedin-in {
   color: #0976b4;
+  margin: 0.5em;
+  margin-left: 0em;
 }
 
 .fa-twitter {
   color: #55acee;
+  margin: 0.5em;
 }
 
 .fa-instagram {
   color: #f46f30;
+  margin: 0.5em;
 }
 
 .fa-github {
   color: black;
+  margin: 0.5em;
 }
 
 /* About Me Page */
@@ -248,25 +250,4 @@ input[type="checkbox"] {
 .toggle:checked + .lbl-toggle {
   border-bottom-right-radius: 0em;
   border-bottom-left-radius: 0em;
-}
-
-/* Grid for Videos */
-.lift {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(10em, auto);
-}
-
-.lift video {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
-
-.lift2 {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 3;
-  grid-column-end: 3;
 }
