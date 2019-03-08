@@ -297,7 +297,7 @@ input[type="checkbox"] {
   width: 25em;
   margin-top: 1.5em;
   padding: 1em;
-  color: whitesmoke;
+  color: darkblue;
   font-weight: bold;
   font-size: 1.1em;
   transition: 0.6s ease;
@@ -322,7 +322,7 @@ input[type="checkbox"] {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
   transition: backgrond-color 0.6s ease;
@@ -330,7 +330,7 @@ input[type="checkbox"] {
 
 .active,
 .dot:hover {
-  background-color: darkblue;
+  background-color: whitesmoke;
 }
 
 /* Fading animation */
