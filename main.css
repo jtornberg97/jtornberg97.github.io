@@ -170,12 +170,12 @@ nav a .home {
 @media (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
+
   #section-a .content-text {
-    columns: 1;
+    columns: 2;
     column-gap: 2em;
-    padding: 1em;
   }
 
   #section-a .content-text p {
@@ -184,7 +184,7 @@ nav a .home {
 
   .content-wrap,
   #section-b ul {
-    grid-column: 2/6;
+    grid-column: 2/4;
   }
 
   #main-footer div {
