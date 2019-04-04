@@ -3,64 +3,108 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <Title>Jonathan Tornberg</Title>
   <link rel="stylesheet" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous" />
-  <script src="main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
+  </script>
 </head>
 
 <body>
-  <section class="container">
-    <nav>
-      <div>
-        <a href="index.html"><img src="img/logo.jpg" alt="logo" /></a>
-      </div>
-      <div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="my-projects.html">My Projects</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="main">
-      <article class="welcome">
-        <h1>Jonathan Tornberg</h1>
-        <h2>
-          IT Analyst for
-          <a href="https://captechconsulting.com"> Captech Consulting</a>
+  <!-- Navigation -->
+  <nav>
+    <div class="home">
+      <a href="index.html" class="navLinks">Home</a>
+    </div>
+    <div class="about">
+      <a href="#" class="navLinks">About Me</a>
+    </div>
+    <div class="logo">
+    </div>
+    <div class="work">
+      <a href="#" class="navLinks">Portfolio</a>
+    </div>
+    <div class="contact">
+      <a href="#" class="navLinks">Contact Me</a>
+  </nav>
+  <!-- Header Showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+    </div>
+  </header>
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h1 class="content-title">Jonathan Tornberg</h1>
+        <h2 class="content-title">IT Analyst for <a href="https://www.captechconsulting.com/">Captech Consulting</a>
         </h2>
-        <div>
-          <h3>Who?</h3>
-          <p>
-            May 2019 Graduate working for
-            <a href="https://www.captechconsulting.com/">
-              Captech Consulting</a>
-            after graduation
+        <div class="content-text">
+          <p>Welcome to my site! My name is Jonathan Tornberg and I am a recent graduate of UNC Chapel Hill. After
+            graduation,
+            I will begin working for CapTech Consulting in Charlotte, North Carolina. As an IT Business Analyst, role is
+            primarily focused on
+            finding how innovative IT solutions can meet your business needs.
           </p>
-          <h3>What?</h3>
-          <p>
-            Portfolio website to display my projects and highlight my key
-            accomplishments
-          </p>
-          <h3>Where?</h3>
-          <p>University of North Carolina at Chapel Hill</p>
-          <h3>Interested?</h3>
-          <p>Connect With Me <br /></p>
-          <a href="https://www.linkedin.com/in/jtornberg/"><i class="fab fa-linkedin-in fa-2x"></i></a>
-          <a href="https://github.com/jtornberg97"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://twitter.com/JTornberg97"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="https://www.instagram.com/jtornberg97/"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
-      </article>
+      </div>
     </section>
-    <section class="aside">
-      <img src="img/head.jpg" alt="head" />
-      <img src="img/family.jpg" alt="family" />
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="img/IMG_0429.jpg" alt="headshot">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Education</h3>
+            <p>B.S. Information Science, History Minor University of North Carolina at Chapel Hill May 2019 <br> 3.52
+              GPA</p>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="img/code-coding-computer-574073 copy.jpg" alt="code">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Core Competencies</h3>
+            <p>
+              Information Architecture, Business Systems Analysis, Master Data Management, Front-end Development
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="img/IMG_1070.jpg" alt="lifting">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Other Interests</h3>
+            <p>Recreational powerlifter with USAPL</p>
+          </div>
+        </li>
+      </ul>
     </section>
-  </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Reach out to me</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui cumque quia quasi modi, commodi iure ex
+          inventore ducimus deserunt perferendis!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer" class="grid">
+    <div>Jonathan Tornberg</div>
+  </footer>
+
 </body>
 
 </html>
