@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   background: #333333;
-  color: #ffffff;
+  color: black;
   line-height: 1.5;
   text-align: center;
 }
@@ -48,7 +48,7 @@ nav {
   grid-gap: 1em;
   align-items: center;
   text-align: center;
-  border-bottom: 4px solid black;
+  border-bottom: .25rem solid black;
   background: #333;
 }
 
@@ -123,6 +123,10 @@ nav a .home {
   padding-bottom: 2em;
 }
 
+#section-a .content-text {
+  margin: 1em;
+}
+
 /* Section B */
 
 #section-b {
@@ -154,7 +158,21 @@ nav a .home {
 #section-c {
   background: #fff;
   color: #333;
-  padding: 2em;
+  /* padding: 2em; */
+}
+
+.social ul {
+  list-style-type: none;
+}
+
+.social li {
+  display: inline;
+  padding: 1.5em;
+  align-content: center;
+}
+
+#section-c a:hover {
+  color: black;
 }
 
 #main-footer {
@@ -188,7 +206,7 @@ nav a .home {
   }
 
   #main-footer div {
-    grid-column: span 2;
+    grid-column: span 4;
   }
 
   #section-b ul {
@@ -223,7 +241,7 @@ nav a .home {
   }
 
   #main-footer div {
-    grid-column: span 2;
+    grid-column: span 4;
   }
 
   #section-b ul {
@@ -234,4 +252,68 @@ nav a .home {
   #section-b li {
     width: 32%;
   }
+
+}
+
+/* Resume */
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.wrapper {
+  background-color: #333;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "sidebar"
+    "content"
+}
+
+.wrapper h3 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper p,
+li {
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+}
+
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 30% auto;
+    grid-template-areas:
+      "sidebar  content"
+  }
+
+  .wrapper {
+    font-size: 1.2em;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  .wrapper {
+    grid-gap: 20px;
+    grid-template-columns: 30% auto;
+    grid-template-areas:
+      "sidebar content"
+  }
+}
+
+.box {
+  /* background: #ffffff; */
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
 }

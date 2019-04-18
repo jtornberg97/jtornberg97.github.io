@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Title>Jonathan Tornberg</Title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="home">
+            <a href="index.html" class="navLinks">Home</a>
+        </div>
+        <div class="resume">
+            <a href="resume.html" class="navLinks">Resume</a>
+        </div>
+        <div class="logo"></div>
+        <div class="work">
+            <a href="#" class="navLinks">Portfolio</a>
+        </div>
+        <div class="contact">
+            <a href="#" class="navLinks">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Main Area -->
+    <main id="main">
+        <div class="wrapper">
+            <div class="box sidebar">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="../img/resume_lg.jpg">
+                    <source media="(min-width: 768px)" srcset="../img/resume_sm.jpg">
+                    <img src="img/resume_sm.jpg" alt="Family">
+                </picture>
+            </div>
+            <div class="box content">
+                <div class="w3-container">
+                    <button onclick="myFunction('Education')"
+                        class="w3-btn w3-block w3-white w3-center-align">Education</button>
+                    <div id="Education" class="w3-container w3-hide w3-left-align">
+                        <h3>University of North Carolina at Chapel Hill (2019)</h3>
+                        <p>B.S. Information Science 3.55 GPA (3.86 Major GPA)</p> <br>
+                        <P>Relevant Coursework:</p>
+                        <p>Systems Analysis 1 & 2, Text Data Mining, Database Concepts and Applications, Information
+                            Security, Web Development 1 & 2, Big Data and Algorithms in Society</p>
+                    </div>
+
+                    <button onclick="myFunction('Experience')"
+                        class="w3-btn w3-block w3-white w3-center-align">Experience</button>
+                    <div id="Experience" class="w3-container w3-hide w3-left-align">
+
+
+                        <button onclick="myFunction('CapTech')"
+                            class="w3-btn w3-block w3-white w3-left-align">CapTech</button>
+                        <div id="CapTech" class="w3-container w3-hide w3-left-align">
+                            <h3>CapTech Consulting (Sep 2019 - Present)</h3>
+                            <p>IT Business Analyst</p>
+                        </div>
+
+
+
+                        <button onclick="myFunction('Volvo')"
+                            class="w3-btn w3-block w3-white w3-left-align">Volvo</button>
+                        <div id="Volvo" class="w3-container w3-hide w3-left-align">
+                            <h3>Volvo Trucks North America (Jan - Aug 2018)</h3>
+                            <p>Process & IT Co-Op</p>
+                            <ul>
+                                <li>Managed the implementation of GDPR requirements for Mack Trucks by understanding the
+                                    requirements of the legislation and communicating necessary changes to business and
+                                    IT
+                                    stakeholders.</li>
+                                <li>Developed a GDPR compliant data catalogue for Mack Trucks by working with global and
+                                    local colleages.</li>
+                                <li>Assisted in managing a data governance initiative by documenting as-is and to-be
+                                    architectures after the
+                                    implementation of VTNA’s MDM solution. Was also responsible for the creation of
+                                    PowerPoint presentations, newsletters, and training materials to highlight the
+                                    initiative to business stakeholders</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="myFunction('CIN')" class="w3-btn w3-block w3-white w3-left-align">Children's
+                            Impact Network</button>
+                        <div id="CIN" class="w3-container w3-hide w3-left-align">
+                            <h3>Children's Impact Network (June-July 2017 and 2019)</h3>
+                            <p>Summer Intern and Seasonal Staff</p>
+                            <ul>
+                                <li>Responsible for overseeing the teams’ of around 30 people and their involvement in
+                                    the
+                                    construction of a second home on the property</li>
+                                <li>Spent a significant amount of time with the children and staff at the home assisting
+                                    with various projects</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <button onclick="myFunction('Tech')" class="w3-btn w3-block w3-white w3-center-align">Technical and
+                        Software Skills</button>
+                    <div id="Tech" class="w3-container w3-hide w3-left-align">
+                        <h3>Programming (in order proficiency):</h3>
+                        <p>Front-End (HTML, CSS, JavaScript), SQL, Python, R</p>
+                        <h3>Software:</h3>
+                        <p>Significant professional experience with Microsoft Office Suite including Excel, Project,
+                            Visio, as well as introductory experience with Power BI and SharePoint Development</p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+</html>
