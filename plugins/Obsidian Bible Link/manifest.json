@@ -1,0 +1,9 @@
+{
+  "id": "auto-scripture-linker",
+  "name": "Auto Scripture Linker",
+  "version": "1.0.0",
+  "author": "Jonathan Tornberg",
+  "description": "Auto-link Bible verses to NRSV passages",
+  "main": "main.js",
+  "minAppVersion": "0.12.0"
+}
