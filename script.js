@@ -154,10 +154,13 @@
       return;
     }
 
-    // Simulated submission — swap for fetch() to a backend or Formspree in production.
+    // No backend: hand the message to the visitor's email app.
+    const data = new FormData(form);
+    const subject = `Website message from ${data.get('name').trim()}`;
+    const body = `${data.get('message').trim()}\n\n— ${data.get('name').trim()} (${data.get('email').trim()})`;
+    window.location.href = `mailto:jmtornberg@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     success.hidden = false;
-    form.reset();
-    setTimeout(() => { success.hidden = true; }, 5000);
+    setTimeout(() => { success.hidden = true; }, 6000);
   });
 
   form.querySelectorAll('input, textarea').forEach(el => {
