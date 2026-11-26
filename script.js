@@ -85,9 +85,8 @@
      Reveal on scroll
      ------------------------------------------------------ */
   const revealTargets = document.querySelectorAll(
-    '.hero__meta, .hero__title, .hero__lede, .hero__foot, ' +
-    '.section__aside, .section__body > *, ' +
-    '.timeline__item, .project, .stat, .cred, .toolkit__col, ' +
+    '.hero__inner > *, .section-head, .prose, .metric, ' +
+    '.timeline__item, .case, .toolkit__col, .cred, ' +
     '.contact__form, .contact__direct'
   );
   revealTargets.forEach(el => el.classList.add('reveal'));
